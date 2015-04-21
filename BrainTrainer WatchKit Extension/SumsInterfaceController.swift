@@ -23,6 +23,7 @@ class SumsInterfaceController: WKInterfaceController {
     var correctAnswerIndex:Int = 0 //Which button gets the correct answer 1-4
     var answerButtons = ["answer1Label", "answer2Label", "answer3Label", "answer4Label"]
     var score:Int = 0
+    var type:String = ""
     
     @IBOutlet weak var answer1Label: WKInterfaceButton!
     @IBAction func answer1() {
@@ -53,21 +54,31 @@ class SumsInterfaceController: WKInterfaceController {
         } else {
             answerCorrectLabel.setText("Wrong!")
         }
+        generateQuestion()
     }
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        if let type = context as? String {
-            startQuiz(type)
+        if let questionType = context as? String {
+            type = questionType
+            startQuiz()
         } else {
             pushControllerWithName("InterfaceController", context: nil)
         }
     }
     
-    func startQuiz(type:String) {
+    func startQuiz() {
         timer.setDate(NSDate(timeIntervalSinceNow: 30))
         var countdown = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: Selector("quizComplete"), userInfo: nil, repeats: false)
         timer.start()
+        generateQuestion()
+    }
+    
+    func quizComplete() {
+        println("Done!")
+    }
+    
+    func generateQuestion() {
         if type == "plus" {
             firstOperand = Int(arc4random_uniform(11))
             secondOperand = Int(arc4random_uniform(11))
@@ -115,10 +126,6 @@ class SumsInterfaceController: WKInterfaceController {
             }
         }
         sumLabel.setText("\(firstOperand) \(sumCharacter) \(secondOperand) =")
-    }
-    
-    func quizComplete() {
-        println("Done!")
     }
 
     override func willActivate() {
