@@ -22,6 +22,7 @@ class SumsInterfaceController: WKInterfaceController {
     var sumCharacter = "" //+,-,x, or ÷
     var correctAnswerIndex:Int = 0 //Which button gets the correct answer 1-4
     var answerButtons = ["answer1Label", "answer2Label", "answer3Label", "answer4Label"]
+    var score:Int = 0
     
     @IBOutlet weak var answer1Label: WKInterfaceButton!
     @IBAction func answer1() {
@@ -48,6 +49,7 @@ class SumsInterfaceController: WKInterfaceController {
     func answerPicked(chosenAnswer:Int) {
         if chosenAnswer == correctAnswerIndex {
             answerCorrectLabel.setText("Correct!")
+            score++
         } else {
             answerCorrectLabel.setText("Wrong!")
         }
