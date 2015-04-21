@@ -12,6 +12,7 @@ import Foundation
 
 class SumsInterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var playAgainButton: WKInterfaceButton!
     @IBOutlet weak var answerCorrectLabel: WKInterfaceLabel!
     @IBOutlet weak var resultsLabel: WKInterfaceLabel!
     @IBOutlet weak var timer: WKInterfaceTimer!
@@ -24,6 +25,12 @@ class SumsInterfaceController: WKInterfaceController {
     var answerButtons = ["answer1Label", "answer2Label", "answer3Label", "answer4Label"]
     var score:Int = 0
     var type:String = ""
+    var countdown = NSTimer()
+    
+    @IBAction func stop() {
+        countdown.invalidate()
+        pushControllerWithName("InterfaceController", context: nil)
+    }
     
     @IBOutlet weak var answer1Label: WKInterfaceButton!
     @IBAction func answer1() {
@@ -65,11 +72,22 @@ class SumsInterfaceController: WKInterfaceController {
         } else {
             pushControllerWithName("InterfaceController", context: nil)
         }
+        score = 0
+        resultsLabel.setHidden(true)
+        playAgainButton.setHidden(true)
+        timer.setHidden(false)
+        sumLabel.setHidden(false)
+        answer1Label.setHidden(false)
+        answer2Label.setHidden(false)
+        answer3Label.setHidden(false)
+        answer4Label.setHidden(false)
+        answerCorrectLabel.setHidden(false)
+        resultsLabel.setText("Your score: \(score)")
     }
     
     func startQuiz() {
         timer.setDate(NSDate(timeIntervalSinceNow: 30))
-        var countdown = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: Selector("quizComplete"), userInfo: nil, repeats: false)
+        countdown = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: Selector("quizComplete"), userInfo: nil, repeats: false)
         timer.start()
         generateQuestion()
     }
@@ -84,6 +102,7 @@ class SumsInterfaceController: WKInterfaceController {
         answerCorrectLabel.setHidden(true)
         resultsLabel.setText("Your score: \(score)")
         resultsLabel.setHidden(false)
+        playAgainButton.setHidden(false)
     }
     
     func generateQuestion() {

@@ -52,9 +52,15 @@
             <objects>
                 <controller identifier="SumsInterfaceController" id="Jua-g6-LT6" customClass="SumsInterfaceController" customModule="BrainTrainer_WatchKit_Extension">
                     <items>
-                        <label width="1" alignment="left" hidden="YES" text="SCORE" textAlignment="center" numberOfLines="0" id="88X-RU-MOS">
+                        <label width="1" height="0.50000000000000011" alignment="left" hidden="YES" text="SCORE" textAlignment="center" numberOfLines="0" id="88X-RU-MOS">
                             <fontDescription key="font" type="system" pointSize="21"/>
                         </label>
+                        <button width="1" alignment="left" hidden="YES" title="Play Again" id="qkR-bX-dl8">
+                            <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="A5N-RT-OPQ"/>
+                            </connections>
+                        </button>
                         <timer alignment="center" previewedSeconds="50" id="SZc-FO-PCq">
                             <calendarUnit key="units" minute="YES" second="YES"/>
                         </timer>
@@ -95,12 +101,22 @@
                         </group>
                         <label width="1" alignment="left" textAlignment="center" id="daG-Wn-Vqr"/>
                     </items>
+                    <menu key="menu" id="DVP-bY-5db">
+                        <items>
+                            <menuItem title="Stop" icon="decline" id="2Xw-Tr-BYO">
+                                <connections>
+                                    <action selector="stop" destination="Jua-g6-LT6" id="Z3g-7d-LGB"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="answer1Label" destination="7z1-ZF-9e8" id="SJp-Af-5zH"/>
                         <outlet property="answer2Label" destination="hwi-BM-fO2" id="Fcw-8u-p8C"/>
                         <outlet property="answer3Label" destination="6NZ-fO-LXH" id="iqe-Ju-fBh"/>
                         <outlet property="answer4Label" destination="nbr-nI-lG3" id="HY6-lE-INz"/>
                         <outlet property="answerCorrectLabel" destination="daG-Wn-Vqr" id="Saj-ZJ-Vko"/>
+                        <outlet property="playAgainButton" destination="qkR-bX-dl8" id="0hz-fd-6n1"/>
                         <outlet property="resultsLabel" destination="88X-RU-MOS" id="RsB-5A-MRp"/>
                         <outlet property="sumLabel" destination="Biw-Ip-FiN" id="Eqx-HC-Dd0"/>
                         <outlet property="timer" destination="SZc-FO-PCq" id="WPq-CH-ftP"/>
