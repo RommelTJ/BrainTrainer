@@ -12,6 +12,7 @@ import Foundation
 
 class SumsInterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var answerCorrectLabel: WKInterfaceLabel!
     @IBOutlet weak var resultsLabel: WKInterfaceLabel!
     @IBOutlet weak var timer: WKInterfaceTimer!
     @IBOutlet weak var sumLabel: WKInterfaceLabel!
@@ -24,24 +25,32 @@ class SumsInterfaceController: WKInterfaceController {
     
     @IBOutlet weak var answer1Label: WKInterfaceButton!
     @IBAction func answer1() {
-        //TODO
+        answerPicked(1)
     }
     
     @IBOutlet weak var answer2Label: WKInterfaceButton!
     @IBAction func answer2() {
-        //TODO
+        answerPicked(2)
     }
     
     
     @IBOutlet weak var answer3Label: WKInterfaceButton!
     @IBAction func answer3() {
-        //TODO
+        answerPicked(3)
     }
     
     
     @IBOutlet weak var answer4Label: WKInterfaceButton!
     @IBAction func answer4() {
-        //TODO
+        answerPicked(4)
+    }
+    
+    func answerPicked(chosenAnswer:Int) {
+        if chosenAnswer == correctAnswerIndex {
+            answerCorrectLabel.setText("Correct!")
+        } else {
+            answerCorrectLabel.setText("Wrong!")
+        }
     }
     
     override func awakeWithContext(context: AnyObject?) {

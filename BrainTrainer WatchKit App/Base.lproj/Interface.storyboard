@@ -93,12 +93,14 @@
                                 </button>
                             </items>
                         </group>
+                        <label width="1" alignment="left" textAlignment="center" id="daG-Wn-Vqr"/>
                     </items>
                     <connections>
                         <outlet property="answer1Label" destination="7z1-ZF-9e8" id="SJp-Af-5zH"/>
                         <outlet property="answer2Label" destination="hwi-BM-fO2" id="Fcw-8u-p8C"/>
                         <outlet property="answer3Label" destination="6NZ-fO-LXH" id="iqe-Ju-fBh"/>
                         <outlet property="answer4Label" destination="nbr-nI-lG3" id="HY6-lE-INz"/>
+                        <outlet property="answerCorrectLabel" destination="daG-Wn-Vqr" id="Saj-ZJ-Vko"/>
                         <outlet property="resultsLabel" destination="88X-RU-MOS" id="RsB-5A-MRp"/>
                         <outlet property="sumLabel" destination="Biw-Ip-FiN" id="Eqx-HC-Dd0"/>
                         <outlet property="timer" destination="SZc-FO-PCq" id="WPq-CH-ftP"/>
