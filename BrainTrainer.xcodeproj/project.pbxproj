@@ -20,6 +20,7 @@
 		7762F14A1AE69E16004513AB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7762F1481AE69E16004513AB /* Interface.storyboard */; };
 		7762F14C1AE69E16004513AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7762F14B1AE69E16004513AB /* Images.xcassets */; };
 		7762F14F1AE69E16004513AB /* BrainTrainer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7762F1341AE69E15004513AB /* BrainTrainer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7762F1581AE6A2EE004513AB /* SumsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762F1571AE6A2EE004513AB /* SumsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		7762F1471AE69E16004513AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7762F1491AE69E16004513AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		7762F14B1AE69E16004513AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7762F1571AE6A2EE004513AB /* SumsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			children = (
 				7762F1391AE69E15004513AB /* InterfaceController.swift */,
 				7762F13B1AE69E15004513AB /* NotificationController.swift */,
+				7762F1571AE6A2EE004513AB /* SumsInterfaceController.swift */,
 				7762F13D1AE69E15004513AB /* Images.xcassets */,
 				7762F1361AE69E15004513AB /* Supporting Files */,
 			);
@@ -384,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7762F1581AE6A2EE004513AB /* SumsInterfaceController.swift in Sources */,
 				7762F13C1AE69E15004513AB /* NotificationController.swift in Sources */,
 				7762F13A1AE69E15004513AB /* InterfaceController.swift in Sources */,
 			);
@@ -647,6 +651,7 @@
 				7762F12C1AE69DF6004513AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7762F12D1AE69DF6004513AB /* Build configuration list for PBXNativeTarget "BrainTrainerTests" */ = {
 			isa = XCConfigurationList;
@@ -655,6 +660,7 @@
 				7762F12F1AE69DF6004513AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7762F1501AE69E16004513AB /* Build configuration list for PBXNativeTarget "BrainTrainer WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -663,6 +669,7 @@
 				7762F1521AE69E16004513AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7762F1531AE69E16004513AB /* Build configuration list for PBXNativeTarget "BrainTrainer WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +678,7 @@
 				7762F1551AE69E16004513AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

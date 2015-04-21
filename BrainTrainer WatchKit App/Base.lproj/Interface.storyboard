@@ -1,16 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BrainTrainer_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="Da8-eG-7AC">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="+" id="OzZ-Ar-39X">
+                                    <fontDescription key="font" type="system" pointSize="64"/>
+                                    <connections>
+                                        <action selector="plus" destination="AgC-eL-Hgc" id="vNB-xe-j3s"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="-" id="9Sb-t3-eig">
+                                    <fontDescription key="font" type="system" pointSize="64"/>
+                                    <connections>
+                                        <action selector="minus" destination="AgC-eL-Hgc" id="PEc-S2-jcF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.50000000000000011" alignment="left" id="9JL-Lo-0sI">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="x" id="NdC-VH-q1Z">
+                                    <fontDescription key="font" type="system" pointSize="64"/>
+                                    <connections>
+                                        <action selector="multiply" destination="AgC-eL-Hgc" id="JYj-Kx-nME"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="÷" id="2gi-u7-DmM">
+                                    <fontDescription key="font" type="system" pointSize="64"/>
+                                    <connections>
+                                        <action selector="divide" destination="AgC-eL-Hgc" id="5Oh-7H-nOg"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--SumsInterfaceController-->
+        <scene sceneID="kV1-Lm-xFF">
+            <objects>
+                <controller identifier="SumsInterfaceController" id="Jua-g6-LT6" customClass="SumsInterfaceController" customModule="BrainTrainer_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" hidden="YES" text="SCORE" textAlignment="center" numberOfLines="0" id="88X-RU-MOS">
+                            <fontDescription key="font" type="system" pointSize="21"/>
+                        </label>
+                        <timer alignment="center" previewedSeconds="50" id="SZc-FO-PCq">
+                            <calendarUnit key="units" second="YES"/>
+                        </timer>
+                        <label width="1" alignment="left" text="3 + 10 =" textAlignment="center" id="Biw-Ip-FiN">
+                            <color key="textColor" red="0.9989192683" green="1" blue="0.045983177649999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <group width="1" height="0.25" alignment="left" id="aU1-XQ-htv">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="32" id="7z1-ZF-9e8">
+                                    <color key="backgroundColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="answer1" destination="Jua-g6-LT6" id="W8Q-IZ-daI"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="4" id="hwi-BM-fO2">
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="answer2" destination="Jua-g6-LT6" id="sTE-Px-WP7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.25" alignment="left" id="M45-fw-pvd">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="13" id="6NZ-fO-LXH">
+                                    <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="answer3" destination="Jua-g6-LT6" id="ffp-lr-jSj"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="8" id="nbr-nI-lG3">
+                                    <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="answer4" destination="Jua-g6-LT6" id="Gai-Cu-psf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="resultsLabel" destination="88X-RU-MOS" id="RsB-5A-MRp"/>
+                        <outlet property="sumLabel" destination="Biw-Ip-FiN" id="Eqx-HC-Dd0"/>
+                        <outlet property="timer" destination="SZc-FO-PCq" id="WPq-CH-ftP"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="461" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +122,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="BrainTrainer_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
