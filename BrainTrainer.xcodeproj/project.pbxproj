@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7762F1111AE69DF6004513AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762F1101AE69DF6004513AB /* AppDelegate.swift */; };
+		7762F1131AE69DF6004513AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762F1121AE69DF6004513AB /* ViewController.swift */; };
+		7762F1161AE69DF6004513AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7762F1141AE69DF6004513AB /* Main.storyboard */; };
+		7762F1181AE69DF6004513AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7762F1171AE69DF6004513AB /* Images.xcassets */; };
+		7762F11B1AE69DF6004513AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7762F1191AE69DF6004513AB /* LaunchScreen.xib */; };
+		7762F1271AE69DF6004513AB /* BrainTrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762F1261AE69DF6004513AB /* BrainTrainerTests.swift */; };
+		7762F13A1AE69E15004513AB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762F1391AE69E15004513AB /* InterfaceController.swift */; };
+		7762F13C1AE69E15004513AB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762F13B1AE69E15004513AB /* NotificationController.swift */; };
+		7762F13E1AE69E15004513AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7762F13D1AE69E15004513AB /* Images.xcassets */; };
+		7762F1421AE69E16004513AB /* BrainTrainer WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 7762F1411AE69E16004513AB /* BrainTrainer WatchKit App.app */; };
+		7762F14A1AE69E16004513AB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7762F1481AE69E16004513AB /* Interface.storyboard */; };
+		7762F14C1AE69E16004513AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7762F14B1AE69E16004513AB /* Images.xcassets */; };
+		7762F14F1AE69E16004513AB /* BrainTrainer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7762F1341AE69E15004513AB /* BrainTrainer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7762F1211AE69DF6004513AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7762F1031AE69DF6004513AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7762F10A1AE69DF6004513AB;
+			remoteInfo = BrainTrainer;
+		};
+		7762F1431AE69E16004513AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7762F1031AE69DF6004513AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7762F1401AE69E16004513AB;
+			remoteInfo = "BrainTrainer WatchKit App";
+		};
+		7762F14D1AE69E16004513AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7762F1031AE69DF6004513AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7762F1331AE69E15004513AB;
+			remoteInfo = "BrainTrainer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7762F1561AE69E16004513AB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7762F14F1AE69E16004513AB /* BrainTrainer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7762F10B1AE69DF6004513AB /* BrainTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7762F10F1AE69DF6004513AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7762F1101AE69DF6004513AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7762F1121AE69DF6004513AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7762F1151AE69DF6004513AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7762F1171AE69DF6004513AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7762F11A1AE69DF6004513AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7762F1201AE69DF6004513AB /* BrainTrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7762F1251AE69DF6004513AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7762F1261AE69DF6004513AB /* BrainTrainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTrainerTests.swift; sourceTree = "<group>"; };
+		7762F1341AE69E15004513AB /* BrainTrainer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BrainTrainer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7762F1371AE69E15004513AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7762F1381AE69E15004513AB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7762F1391AE69E15004513AB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7762F13B1AE69E15004513AB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7762F13D1AE69E15004513AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7762F1411AE69E16004513AB /* BrainTrainer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BrainTrainer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7762F1471AE69E16004513AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7762F1491AE69E16004513AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7762F14B1AE69E16004513AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7762F1081AE69DF6004513AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7762F11D1AE69DF6004513AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7762F1311AE69E15004513AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7762F1021AE69DF6004513AB = {
+			isa = PBXGroup;
+			children = (
+				7762F10D1AE69DF6004513AB /* BrainTrainer */,
+				7762F1231AE69DF6004513AB /* BrainTrainerTests */,
+				7762F1351AE69E15004513AB /* BrainTrainer WatchKit Extension */,
+				7762F1451AE69E16004513AB /* BrainTrainer WatchKit App */,
+				7762F10C1AE69DF6004513AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7762F10C1AE69DF6004513AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7762F10B1AE69DF6004513AB /* BrainTrainer.app */,
+				7762F1201AE69DF6004513AB /* BrainTrainerTests.xctest */,
+				7762F1341AE69E15004513AB /* BrainTrainer WatchKit Extension.appex */,
+				7762F1411AE69E16004513AB /* BrainTrainer WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7762F10D1AE69DF6004513AB /* BrainTrainer */ = {
+			isa = PBXGroup;
+			children = (
+				7762F1101AE69DF6004513AB /* AppDelegate.swift */,
+				7762F1121AE69DF6004513AB /* ViewController.swift */,
+				7762F1141AE69DF6004513AB /* Main.storyboard */,
+				7762F1171AE69DF6004513AB /* Images.xcassets */,
+				7762F1191AE69DF6004513AB /* LaunchScreen.xib */,
+				7762F10E1AE69DF6004513AB /* Supporting Files */,
+			);
+			path = BrainTrainer;
+			sourceTree = "<group>";
+		};
+		7762F10E1AE69DF6004513AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7762F10F1AE69DF6004513AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7762F1231AE69DF6004513AB /* BrainTrainerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7762F1261AE69DF6004513AB /* BrainTrainerTests.swift */,
+				7762F1241AE69DF6004513AB /* Supporting Files */,
+			);
+			path = BrainTrainerTests;
+			sourceTree = "<group>";
+		};
+		7762F1241AE69DF6004513AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7762F1251AE69DF6004513AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7762F1351AE69E15004513AB /* BrainTrainer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7762F1391AE69E15004513AB /* InterfaceController.swift */,
+				7762F13B1AE69E15004513AB /* NotificationController.swift */,
+				7762F13D1AE69E15004513AB /* Images.xcassets */,
+				7762F1361AE69E15004513AB /* Supporting Files */,
+			);
+			path = "BrainTrainer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7762F1361AE69E15004513AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7762F1371AE69E15004513AB /* Info.plist */,
+				7762F1381AE69E15004513AB /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7762F1451AE69E16004513AB /* BrainTrainer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7762F1481AE69E16004513AB /* Interface.storyboard */,
+				7762F14B1AE69E16004513AB /* Images.xcassets */,
+				7762F1461AE69E16004513AB /* Supporting Files */,
+			);
+			path = "BrainTrainer WatchKit App";
+			sourceTree = "<group>";
+		};
+		7762F1461AE69E16004513AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7762F1471AE69E16004513AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7762F10A1AE69DF6004513AB /* BrainTrainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7762F12A1AE69DF6004513AB /* Build configuration list for PBXNativeTarget "BrainTrainer" */;
+			buildPhases = (
+				7762F1071AE69DF6004513AB /* Sources */,
+				7762F1081AE69DF6004513AB /* Frameworks */,
+				7762F1091AE69DF6004513AB /* Resources */,
+				7762F1561AE69E16004513AB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7762F14E1AE69E16004513AB /* PBXTargetDependency */,
+			);
+			name = BrainTrainer;
+			productName = BrainTrainer;
+			productReference = 7762F10B1AE69DF6004513AB /* BrainTrainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7762F11F1AE69DF6004513AB /* BrainTrainerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7762F12D1AE69DF6004513AB /* Build configuration list for PBXNativeTarget "BrainTrainerTests" */;
+			buildPhases = (
+				7762F11C1AE69DF6004513AB /* Sources */,
+				7762F11D1AE69DF6004513AB /* Frameworks */,
+				7762F11E1AE69DF6004513AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7762F1221AE69DF6004513AB /* PBXTargetDependency */,
+			);
+			name = BrainTrainerTests;
+			productName = BrainTrainerTests;
+			productReference = 7762F1201AE69DF6004513AB /* BrainTrainerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7762F1331AE69E15004513AB /* BrainTrainer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7762F1531AE69E16004513AB /* Build configuration list for PBXNativeTarget "BrainTrainer WatchKit Extension" */;
+			buildPhases = (
+				7762F1301AE69E15004513AB /* Sources */,
+				7762F1311AE69E15004513AB /* Frameworks */,
+				7762F1321AE69E15004513AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7762F1441AE69E16004513AB /* PBXTargetDependency */,
+			);
+			name = "BrainTrainer WatchKit Extension";
+			productName = "BrainTrainer WatchKit Extension";
+			productReference = 7762F1341AE69E15004513AB /* BrainTrainer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		7762F1401AE69E16004513AB /* BrainTrainer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7762F1501AE69E16004513AB /* Build configuration list for PBXNativeTarget "BrainTrainer WatchKit App" */;
+			buildPhases = (
+				7762F13F1AE69E16004513AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BrainTrainer WatchKit App";
+			productName = "BrainTrainer WatchKit App";
+			productReference = 7762F1411AE69E16004513AB /* BrainTrainer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7762F1031AE69DF6004513AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Rommel Rico";
+				TargetAttributes = {
+					7762F10A1AE69DF6004513AB = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					7762F11F1AE69DF6004513AB = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 7762F10A1AE69DF6004513AB;
+					};
+					7762F1331AE69E15004513AB = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					7762F1401AE69E16004513AB = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 7762F1061AE69DF6004513AB /* Build configuration list for PBXProject "BrainTrainer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7762F1021AE69DF6004513AB;
+			productRefGroup = 7762F10C1AE69DF6004513AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7762F10A1AE69DF6004513AB /* BrainTrainer */,
+				7762F11F1AE69DF6004513AB /* BrainTrainerTests */,
+				7762F1331AE69E15004513AB /* BrainTrainer WatchKit Extension */,
+				7762F1401AE69E16004513AB /* BrainTrainer WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7762F1091AE69DF6004513AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7762F1161AE69DF6004513AB /* Main.storyboard in Resources */,
+				7762F11B1AE69DF6004513AB /* LaunchScreen.xib in Resources */,
+				7762F1181AE69DF6004513AB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7762F11E1AE69DF6004513AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7762F1321AE69E15004513AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7762F13E1AE69E15004513AB /* Images.xcassets in Resources */,
+				7762F1421AE69E16004513AB /* BrainTrainer WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7762F13F1AE69E16004513AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7762F14A1AE69E16004513AB /* Interface.storyboard in Resources */,
+				7762F14C1AE69E16004513AB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7762F1071AE69DF6004513AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7762F1131AE69DF6004513AB /* ViewController.swift in Sources */,
+				7762F1111AE69DF6004513AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7762F11C1AE69DF6004513AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7762F1271AE69DF6004513AB /* BrainTrainerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7762F1301AE69E15004513AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7762F13C1AE69E15004513AB /* NotificationController.swift in Sources */,
+				7762F13A1AE69E15004513AB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7762F1221AE69DF6004513AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7762F10A1AE69DF6004513AB /* BrainTrainer */;
+			targetProxy = 7762F1211AE69DF6004513AB /* PBXContainerItemProxy */;
+		};
+		7762F1441AE69E16004513AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7762F1401AE69E16004513AB /* BrainTrainer WatchKit App */;
+			targetProxy = 7762F1431AE69E16004513AB /* PBXContainerItemProxy */;
+		};
+		7762F14E1AE69E16004513AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7762F1331AE69E15004513AB /* BrainTrainer WatchKit Extension */;
+			targetProxy = 7762F14D1AE69E16004513AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7762F1141AE69DF6004513AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7762F1151AE69DF6004513AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7762F1191AE69DF6004513AB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7762F11A1AE69DF6004513AB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		7762F1481AE69E16004513AB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7762F1491AE69E16004513AB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7762F1281AE69DF6004513AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7762F1291AE69DF6004513AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7762F12B1AE69DF6004513AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BrainTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7762F12C1AE69DF6004513AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BrainTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7762F12E1AE69DF6004513AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrainTrainerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainTrainer.app/BrainTrainer";
+			};
+			name = Debug;
+		};
+		7762F12F1AE69DF6004513AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BrainTrainerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainTrainer.app/BrainTrainer";
+			};
+			name = Release;
+		};
+		7762F1511AE69E16004513AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = BrainTrainer_WatchKit_Extension;
+				INFOPLIST_FILE = "BrainTrainer WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		7762F1521AE69E16004513AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = BrainTrainer_WatchKit_Extension;
+				INFOPLIST_FILE = "BrainTrainer WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		7762F1541AE69E16004513AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BrainTrainer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7762F1551AE69E16004513AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BrainTrainer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7762F1061AE69DF6004513AB /* Build configuration list for PBXProject "BrainTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7762F1281AE69DF6004513AB /* Debug */,
+				7762F1291AE69DF6004513AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7762F12A1AE69DF6004513AB /* Build configuration list for PBXNativeTarget "BrainTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7762F12B1AE69DF6004513AB /* Debug */,
+				7762F12C1AE69DF6004513AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7762F12D1AE69DF6004513AB /* Build configuration list for PBXNativeTarget "BrainTrainerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7762F12E1AE69DF6004513AB /* Debug */,
+				7762F12F1AE69DF6004513AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7762F1501AE69E16004513AB /* Build configuration list for PBXNativeTarget "BrainTrainer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7762F1511AE69E16004513AB /* Debug */,
+				7762F1521AE69E16004513AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7762F1531AE69E16004513AB /* Build configuration list for PBXNativeTarget "BrainTrainer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7762F1541AE69E16004513AB /* Debug */,
+				7762F1551AE69E16004513AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7762F1031AE69DF6004513AB /* Project object */;
+}
