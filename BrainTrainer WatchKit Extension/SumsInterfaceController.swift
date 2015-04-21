@@ -19,7 +19,8 @@ class SumsInterfaceController: WKInterfaceController {
     var secondOperand:Int = 0 //Second operand
     var answer:Int = 0 //Answer
     var sumCharacter = "" //+,-,x, or ÷
-    
+    var correctAnswerIndex:Int = 0 //Which button gets the correct answer 1-4
+    var answerButtons = ["answer1Label", "answer2Label", "answer3Label", "answer4Label"]
     
     @IBOutlet weak var answer1Label: WKInterfaceButton!
     @IBAction func answer1() {
@@ -80,6 +81,27 @@ class SumsInterfaceController: WKInterfaceController {
             }
             answer = firstOperand / secondOperand
             sumCharacter = "÷"
+        }
+        correctAnswerIndex = Int(arc4random_uniform(4)) + 1
+        for (index, value) in enumerate(answerButtons) {
+            var buttonValue:Int
+            if (index == correctAnswerIndex - 1) {
+                buttonValue = answer
+            } else {
+                buttonValue = Int(arc4random_uniform(51))
+                if buttonValue == answer {
+                    buttonValue++
+                }
+            }
+            if value == "answer1Label" {
+                answer1Label.setTitle("\(buttonValue)")
+            } else if value == "answer2Label" {
+                answer2Label.setTitle("\(buttonValue)")
+            } else if value == "answer3Label" {
+                answer3Label.setTitle("\(buttonValue)")
+            } else if value == "answer4Label" {
+                answer4Label.setTitle("\(buttonValue)")
+            }
         }
         sumLabel.setText("\(firstOperand) \(sumCharacter) \(secondOperand) =")
     }
