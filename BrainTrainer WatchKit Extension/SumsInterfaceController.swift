@@ -34,7 +34,30 @@ class SumsInterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        println(context)
+        if let type = context as? String {
+            startQuiz(type)
+        } else {
+            pushControllerWithName("InterfaceController", context: nil)
+        }
+    }
+    
+    func startQuiz(type:String) {
+        timer.setDate(NSDate(timeIntervalSinceNow: 30))
+        var countdown = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: Selector("quizComplete"), userInfo: nil, repeats: false)
+        timer.start()
+        if type == "plus" {
+            
+        } else if type == "minus" {
+            
+        } else if type == "multiply" {
+            
+        } else if type == "divide" {
+            
+        }
+    }
+    
+    func quizComplete() {
+        println("Done!")
     }
 
     override func willActivate() {

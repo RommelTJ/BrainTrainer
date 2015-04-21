@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--InterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BrainTrainer_WatchKit_App" customModuleProvider="target">
+                <controller identifier="InterfaceController" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BrainTrainer_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="0.5" alignment="left" id="Da8-eG-7AC">
                             <items>
@@ -56,7 +56,7 @@
                             <fontDescription key="font" type="system" pointSize="21"/>
                         </label>
                         <timer alignment="center" previewedSeconds="50" id="SZc-FO-PCq">
-                            <calendarUnit key="units" second="YES"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
                         </timer>
                         <label width="1" alignment="left" text="3 + 10 =" textAlignment="center" id="Biw-Ip-FiN">
                             <color key="textColor" red="0.9989192683" green="1" blue="0.045983177649999998" alpha="1" colorSpace="calibratedRGB"/>
