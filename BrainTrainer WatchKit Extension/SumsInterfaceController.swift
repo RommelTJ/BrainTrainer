@@ -75,7 +75,15 @@ class SumsInterfaceController: WKInterfaceController {
     }
     
     func quizComplete() {
-        println("Done!")
+        timer.setHidden(true)
+        sumLabel.setHidden(true)
+        answer1Label.setHidden(true)
+        answer2Label.setHidden(true)
+        answer3Label.setHidden(true)
+        answer4Label.setHidden(true)
+        answerCorrectLabel.setHidden(true)
+        resultsLabel.setText("Your score: \(score)")
+        resultsLabel.setHidden(false)
     }
     
     func generateQuestion() {
@@ -85,18 +93,19 @@ class SumsInterfaceController: WKInterfaceController {
             answer = firstOperand + secondOperand
             sumCharacter = "+"
         } else if type == "minus" {
-            firstOperand = Int(arc4random_uniform(11))
-            secondOperand = Int(arc4random_uniform(11))
+            firstOperand = Int(arc4random_uniform(41))
+            secondOperand = Int(arc4random_uniform(21))
             answer = firstOperand - secondOperand
             sumCharacter = "-"
         } else if type == "multiply" {
-            firstOperand = Int(arc4random_uniform(11))
-            secondOperand = Int(arc4random_uniform(11))
+            firstOperand = Int(arc4random_uniform(8))
+            secondOperand = Int(arc4random_uniform(8))
             answer = firstOperand * secondOperand
             sumCharacter = "x"
         } else if type == "divide" {
-            firstOperand = Int(arc4random_uniform(11))
-            secondOperand = Int(arc4random_uniform(11))
+            answer = Int(arc4random_uniform(21))
+            secondOperand = Int(arc4random_uniform(21))
+            firstOperand = answer * secondOperand
             if secondOperand == 0 {
                 //Cannot divide by 0
                 secondOperand = 1
